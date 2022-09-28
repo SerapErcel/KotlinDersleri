@@ -12,7 +12,7 @@ package com.serapercel.kotlindersleri.nesne_tabanli
     Nesnelerin durumu (state) ve davranis bicimleri (behaviour) vardir.
  */
 
-class Araba(var renk: String, var hiz: Int, var calisiyorMu: Boolean) {
+data class Araba(var renk: String, var hiz: Int, var calisiyorMu: Boolean) {
 
     //  Constructor - init: Siniftan nesne olusturuldugu anda calisir.
     init {
