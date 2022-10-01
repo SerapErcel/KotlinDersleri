@@ -19,4 +19,23 @@ fun main() {
 
     println(bogazVilla.garajVarMi)
     println(bogazVilla.pencereSayisi)
+
+    // Tur Kontrol
+    if (topkapiSarayi is Saray) {
+        println("Saraydir.")
+    } else {
+        println("Saray Degildir.")
+    }
+
+    /*  ----- Tur Donusumu -----
+    Downcasting - Upcasting
+    Downcasting ve upcasting olmasi icin kalitim iliskisi olmalidir.
+     */
+
+    //  Upcasting
+    val ev: Ev = Saray(2, 40)
+
+    //  Downcasting
+    val saray = Ev(45) as Saray
+
 }
